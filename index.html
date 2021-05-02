@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>PHP Documentación</title>
+</head>
+
+<body>
+
+    <nav id="menu">
+        <header class="header">
+            <h1>Hypertext Preprocessor (PHP)</h1>
+        </header>
+        <ul class="list-group" id="temas">
+            <li><a class="list-group-item active">DOCUMENTACIÓN</a></li>
+            <li><a class="list-group-item" href="#¿Qué_es_MATLAB?">¿Qué es MATLAB?</a></li>
+            <li><a class="list-group-item" href="#Partes_del_programa">Partes del programa</a></li>
+            <li><a class="list-group-item" href="#Operaciones_aritméticas">Operaciones aritméticas</a></li>
+            <li><a class="list-group-item" href="#Variables">Variables</a></li>
+            <li><a class="list-group-item" href="#Vectores">Vectores</a></li>
+            <li><a class="list-group-item" href="#Matrices">Matrices</a></li>
+            <li><a class="list-group-item" href="#Funciones">Funciones</a></li>
+            <li><a class="list-group-item" href="#Condicionales">Condicionales</a></li>
+            <li><a class="list-group-item" href="#Referencias">Referencias</a></li>
+
+        </ul>
+    </nav>
+
+
+    <main id="main">
+
+        <section class="main-section" id="¿Qué_es_MATLAB?">
+            <h3>¿Qué es MatLab?</h3>
+
+            <p>
+            <h6>El lenguaje del cálculo técnico</h6>
+
+            Millones de ingenieros y científicos en todo el planeta utilizan MATLAB® para analizar y diseñar los
+            sistemas y productos que transforman nuestro mundo. El lenguaje de MATLAB, basado en matrices, es la
+            forma más natural del mundo para expresar las matemáticas computacionales. Las gráficas integradas
+            facilitan la visualización de los datos y la obtención de información a partir de ellos. El entorno de
+            escritorio invita a experimentar, explorar y descubrir. Todas estas herramientas y funciones de MATLAB
+            están probadas rigurosamente y diseñadas para trabajar juntas.
+            <br> <br>
+            MATLAB le ayuda a llevar sus ideas más allá del escritorio. Puede ejecutar sus análisis en conjuntos de
+            datos de mayor tamaño y expandirse a clusters y nubes. El código de MATLAB se puede integrar con otros
+            lenguajes, lo que le permite implementar algoritmos y aplicaciones en sistemas web, empresariales o de
+            producción.
+            <br> <br>
+            MATLAB es la abreviatura de "matrix laboratory" (laboratorio de matrices). Aunque otros lenguajes de
+            programación generalmente procesan los números de uno en uno, MATLAB® funciona principalmente con matrices y
+            arreglos completos. Los aspectos fundamentales del lenguaje incluyen operaciones básicas, como la creación
+            de variables, la indexación de arreglos, operaciones aritméticas y tipos de datos.
+
+            </p>
+
+        </section>
+
+        <section class="main-section" id="Partes_del_programa">
+            <h3>Partes del programa</h3>
+
+            <p>
+            <ul>
+                <li> <b>Command Window:</b> es la ventana principal, cuyo propósito es realizar cálculos, correr
+                    programas (scripts), asignar valores a variables.</li>
+                <li><b>Figure Window: </b> se representan funciones de diversos modos en 2D y en 3D.</li>
+                <li><b>Editor Window: </b>crea y depura los ficheros script y función, se obtiene seleccionado en el
+                    menú File/New, o en el icono debajo de File</li>
+                <li><b>Command History Window: </b>guarda los comandos que se han introducido en Command Window</li>
+                <li><b>Workspace Window: </b>proporciona información acerca de las variables que se están utilizando.
+                </li>
+                <li><b>Current Folder Window: </b>muestra los ficheros creados y guardados en la carpeta de trabajo</li>
+                <li><b>Help Window: </b>proporciona ayuda</li>
+            </ul>
+
+            </p>
+
+            <p>
+
+
+
+                En la <a href="#ventana1">figura 1</a>, se muestra los elementos principales del Entorno de Desarrollo
+                por defecto, seleccionando
+                Layout/Default. En la barra superior, los botones New para crear un script o una función, Open para
+                cargar
+                un script o una función existente en la carpeta de trabajo (un fichero con extensión .m). Save para
+                guardar
+                un script o una función, nuevo o modificado. Run para correr un script como el que aparece en la ventana
+                del
+                editor
+
+                Debajo de los botones aparece la ubicación de la carpeta de trabajo, que se selecciona con la flecha
+                hacia
+                abajo al lado de la lupa
+
+                Debajo, se disponen cuatro ventanas: la carpeta de trabajo (Current floder) con la lista de los ficheros
+                que
+                podemos ordenar, la ventana del editor (Editor), debajo la ventana de comandos (Command window) y a la
+                derecha la ventana de las variables (Workspace) que han sido creadas cuando corremos el script (Run) con
+                los
+                valores (Value) que guardan
+            </p>
+
+            <img src="./matlab1.jpg" alt="" id="ventana1">
+
+
+        </section>
+
+        <section class="main-section" id="Operaciones_aritméticas">
+            <h3>Operaciones_aritméticas</h3>
+
+            <p>
+                Una vez que se introduce el comando después del símbolo >> y se pulsa la tecla Retorno, el comando se
+                ejecuta.
+
+                Introducimos 55/16 y pulsamos Retorno
+
+                <code>
+
+                   <p>>> 55/16</p> 
+                   <p>ans = 3.4375</p>
+                   </code>
+
+            </p>
+
+            <p>
+                Como ocurre en las calculadoras reutilizamos el último resultado para el siguiente cálculo. Por ejemplo,
+                calculamos el discriminante de una ecuación de segundo grado y lo utilizamos para calcular una de las
+                raíces reales. <br> </br>
+
+                MATLAB utiliza la variable ans para guardar el resultado del cálculo. Más adelante veremos el concepto
+                de variable. Sumamos al resultado, 11 y al pulsar Retorno después de 11, obtenemos una nueva respuesta.
+
+
+                <code>
+
+                    <p>>> ans+11</p> 
+                    <p>ans = 14.4375</p>
+                </code>
+
+
+            </p>
+
+            <p>Los comando que permiten realizar operaciones son:
+
+            </p>
+
+            <table class="table table-warning" id=>
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Operación</th>
+                        <th scope="col">Símbolo</th>
+                        <th scope="col">Ejemplo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Suma</td>
+                        <td>+</td>
+                        <td>6+2=8</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Diferencia</td>
+                        <td>-</td>
+                        <td>6-2=4</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Producto</td>
+                        <td>*</td>
+                        <td>6*2=12</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>Cociente</td>
+                        <td>/</td>
+                        <td>6/2=3</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">5</th>
+                        <td>Elevado a </td>
+                        <td>^</td>
+                        <td>6^^2=36</td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+
+        </section>
+
+        <section class="main-section" id="Variables">
+            <h3>Variables</h3>
+
+            <p>
+                Los datos se pueden almacenar en algún lugar de la
+                memoria, asignando valores a nombres de variables.
+
+
+            </p>
+
+            <ol>
+                <li>Los nombres de las variables deben de comenzar con una letra y pueden tener hasta 31 caracteres, que
+                    pueden ser números, letras, guión (-), subrrayado(_).</li>
+                <li>La variable a es distinta de la variable A, MATLAB diferencia entre mayúsculas y minúsculas.</li>
+                <li>Los nombres de las variables deben tener significado, primero se utilizan letras como a, x, y, pero
+                    cuando los programas son más complejos se llamarán posicion, velocidad, etc. nombres significativos.
+                </li>
+                <li>Los nombres de las variables no pueden coincidir con las palabras reservadas por MATLAB: sin, sqrt
+                    exp, etc.</li>
+                <li>No están permitidos espacios entre caracteres.</li>
+
+            </ol><br></br>
+
+            <h6>Ejemplo</h6>
+            <p>Para guardar el número 1.5 en un lugar de la memoria, lo asignamos a una variable denominada a, del
+                siguiente modo:</p>
+
+            <code>
+                >> a=1.5 <br><br>
+                a = 1.5000
+
+            </code>
+
+            <p>En la misma línea se pueden asignar valores a más de una variable, separadas por comas <b>,</b> o punto y
+                comas <b>;</b></p>
+
+            <code>
+                >> a=6,  b=34 <br><br>
+                a = 6 <br></br>
+                a = 34         
+
+            </code>
+
+            <p>Si no deseamos que se muestren en la ventana de comandos Command Window los valores de a y b
+                escribiremos, alternativamente</p>
+            <code>>> a=6;  b=36; </code>
+
+            <p>
+                El punto y coma ; le indica a MATLAB que ejecute el comando pero que suprima la salida.
+
+                Las variables no solamente pueden guardar números, sino también pueden guardar cadenas de caracteres
+                (strings), delimitados por comillas simples.
+            </p>
+
+            <code>>> str='hola' <br></br>
+                str = hola
+            </code>
+
+            <p>Las variables actualmente en memoria a, b y str tal como aprecen en la ventana Workspace. Las variables
+                en la ventana Workspace pueden ser editadas para cambiar el valor que guardan, pueden ser borradas con
+                la tecla Suprimir, o seleccionado delete en el menú Edit.</p>
+
+            <img src="./matlab2.jpg" alt="" id="ventana1">
+
+        </section>
+
+
+        <section class="main-section" id="Vectores">
+            <h3>Vectores</h3>
+
+            <p>
+
+                La matriz (array) es el tipo fundamental de dato en MATLAB. La variable escalar que hemos estudiado en
+                la página anterior es un caso particular de matriz de dimensión 1×1. Los vectores son las matrices más
+                simples: un vector fila de m elementos es una matriz de dimensión m×1, un vector columna de n elementos
+                es una matriz de dimension 1×n. En esta página, vamos a ver como se crean vectores, como se realizan
+                operaciones con estas entidades y cómo se accede a sus elementos.<br></br>
+
+                En muchos lenguajes, el primer elemento de un vector (array) tiene índice cero, en MATLAB tiene índice
+                uno.<br></br>
+
+                En MATLAB representamos un vector del siguiente modo:
+
+            </p>
+
+            <code>
+                >> r=[5 3 -5]<br></br>
+                r =     5     3    -5<br></br>
+                >> r=[5,3,-5]<br></br>
+                r =     5     3    -5<br></br>
+            </code>
+            <p>
+                Para crear un vector fila se escribe sus elementos unos a continuación de los otros separados por
+                espacios o comas y entre paréntesis cuadrados, tal como se muestra en el cuadro. Para crear un vector
+                columna se escribe los elementos unos a continuación de los otros separados por puntos y comas o bien,
+                en forma columna tal como se indica en el cuadro.
+            </p>
+
+            <code>
+
+                >> r=[5; 3; -5];<br></br>
+                >> r=[5<br></br>
+                3 <br></br>
+                -5]<br></br>
+                r =<br></br>
+                    5<br></br>
+                    3<br></br>
+                   -5
+            </code>
+
+
+        </section>
+
+        <section class="main-section" id="Matrices">
+            <h3>Matrices</h3>
+
+            <p>La matriz (array) es el tipo fundamental de dato en MATLAB.</p>
+            <p>Una matriz A de m filas y n columnas o de dimensión m×n se representa por
+                <img src="./matriz.jpg" alt="">
+            </p>
+
+            <p>Para acceder a un elemento situado en la fila i y en la columna j, Aij, se escribe A(i,j). La función
+                size devuelve dos números que corresponden a las dimensiones de la matriz.
+
+                La matriz traspuesta A' de la matriz A consiste en intercambiar filas por columnas: La primera columna
+                de la matriz A es la primera fila de la matriz traspuesta A', la segunda columna de la matriz A se
+                convierte en segunda fila de la matriz A', y así sucesivamente. La dimensión de la matriz tarspuesta A'
+                es n×m, es decir n filas y m columnas</p>
+
+            <h6>Creación de una matriz</h6>
+            <img src="matriz2.jpg" alt="">
+
+            <p>La función size se utiliza para obtener las dimensiones de una matriz, mientras que la función length, se
+                utiliza para conocer el número de elementos de un vector. <br></br>
+
+                Haciendo doble-clic en en nombre de la variable A en la ventana Workspace o bien, seleccionado la
+                variable en el menú Open variable, se muestra el contenido de la matriz A, en celdas que que contienen
+                los elementos de la matriz que podemos modificar, tal como se muestra en la figura</p>
+            <img src="./matlab3.jpg" alt="">
+
+
+
+
+        </section>
+
+
+
+        <section class="main-section" id="Funciones">
+            <h3>Funciones </h3>
+
+            <p>
+                Estamos acostumbrados a trabajar con funciones del tipo y=f(x) donde f(x) es una expresión matemática en
+                términos de la variable x. Se calcula un valor de y (salida) cuando se proporciona un valor de x
+                (entrada) en la expresión. MATLAB define muchas funciones como sin(x), sqrt(x), etc.
+                <br></br>
+                Podemos definir nuestras propias funciones guardarlas en un fichero y usarlas de un modo semejante a las
+                funciones predefinidas. En muchos casos las funciones son los componentes básicos dentro de un programa
+                de ordenador. Habitualmente, un programa se subdivide en tareas y cada una de ellas es llevada a cabo
+                por una función, a esta forma de resolver los problemas se denomina programación estructurada.
+                <br></br>
+                La principal ventaja de las funciones es la posibilidad de reutilizar el código en otros programas
+                distintos al cual fueron definidas.
+                <br></br>
+                La entrada y la salida puede ser una o varias <a href="#Variables">variable</a>, cada una de ellas puede
+                ser un escalar, un
+                vector o una matriz de cualquier tamaño.
+
+                Las funciones se crean del mismo modo que un script seleccionado en el menú New/Function y se guardan en
+                un fichero que tiene el mismo nombre que la función y extensión <b>.m</b>.
+
+            </p>
+
+            <img src="./matlab4.jpg" alt="" id="ventana1">
+
+
+        </section>
+
+
+
+        <section class="main-section" id="Condicionales">
+            <h3>Condicionales</h3>
+
+            <ul>
+                <li>
+                    <h6>If</h6>
+                    <p>La sentencia if, actúa como cabría esperar. Si la condición es verdadera, la sentencia se
+                        ejecuta, de
+                        otro modo, se salta dicha sentencia, continuando la ejecución del programa con otras sentencias
+                        a
+                        continuación de ésta. La forma general de la sentencia if es:
+
+                        <img src="./if.jpg" alt="" id="if">
+                    
+                    </p>
+                    <code>if (condicion) <br></br>
+                    sentencias <br></br>
+                    end
+                
+                </code>
+                </li>
+
+                <li>
+                    <h6>If...else</h6>
+                    <P> La sentencia if...else completa la sentencia if, para realizar una acción alternativa. <br></br>
+
+                        Si la condición es verdadera se ejecuta las sentencias 1. La palabra clave else, significa que
+                        si la condición no es verdadera se ejecuta las sentencias 2. como la <a href="#ifelse">figura</a>.
+                
+                        
+                    </P>
+                    <img src="./ifelse.jpg" alt="" id="ifelse">
+                    <br></br>
+
+                    <code>if (condicion)<br></br>
+                    sentencias_1<br></br>
+                    else   <br></br>
+                    sentencias_2<br></br>
+                    end
+                </code>
+                </li>
+
+
+
+                <li>
+                    <h6>Switch</h6>
+                    <P> Lla sentencia if...elseif...else tiene
+                        varias ramas, el programa va por una u otra rama dependiendo del valor verdadero o falso de la
+                        expresión evaluada. A veces, es necesario, elegir entre varias alternativas, como se muestra en
+                        la siguiente <a href="">figura</a>
+
+
+                    </P>
+
+                    <img src="./switch.jpg" alt="" id="switch">
+
+                    <code>if (condicion1)<br></br>
+                    sentencias_1<br></br>
+                    elseif (condicion2)   <br></br>
+                    sentencias_2<br></br>
+                    elseif (condicion3)   <br></br>
+                    sentencias_3<br></br>
+                    else <br></br>
+                    sentencias_4<br></br>
+                    end
+                </code>
+                </li>
+
+            </ul>
+
+
+        </section>
+
+
+
+        <section class="main-section" id="Referencias">
+            <h3>Referencias</h3>
+            <p>La documentación de esta página fue tomada de  <a href="https://la.mathworks.com/help/matlab/language-fundamentals.html?s_tid=CRUX_lftnav">Mathworks</a> y <a href="http://www.sc.ehu.es/sbweb/fisica3/basico/portada.html">Matlab</a>Para posteriores consultas.</p>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+
+</body>
+
+</html>

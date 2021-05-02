@@ -1,0 +1,48 @@
+#header {
+    text-align: center;
+    margin-left: 20px;
+}
+
+#menu  {
+    position: fixed;
+    min-width: none;
+    top: 0px;
+    left: 5px;
+    width: 350px;
+    height: 50%;
+    
+   
+  
+   
+}
+
+#main {
+    text-align: left;
+    position: absolute;
+    margin-left: 360px;
+    padding: 50px;
+    width: 70%;
+
+
+  
+}
+
+#ventana1{
+    margin-left: 100px;
+    margin-bottom:20px ;
+    margin-top: 10px;
+}
+
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgba(129, 199, 231, 0.2);
+    width: 300px;
+}
+
+
+#operaciones {
+    width: 30%;
+}
+
+
+
